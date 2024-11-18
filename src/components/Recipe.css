@@ -1,0 +1,8 @@
+ul,
+#instructions {
+  text-align: left;
+}
+
+img {
+  max-width: calc(100% - 4rem);
+}
