@@ -15,6 +15,7 @@ export default function Recipe({ recipe }) {
             <li key={key}>{value}</li>
           ))}
       </ul>
+      <button>Save</button>
     </section>
   );
 }

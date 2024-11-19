@@ -6,3 +6,11 @@ ul,
 img {
   max-width: calc(100% - 4rem);
 }
+
+section button {
+  font-size: 1.2rem;
+  margin: 1rem;
+  background-color: blue;
+  color: white;
+  padding: 0.5rem 2rem;
+}

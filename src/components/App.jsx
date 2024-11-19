@@ -3,6 +3,7 @@ import "./App.css";
 import Search from "./Search";
 import RecipeList from "./RecipeList";
 import Recipe from "./Recipe";
+import { useAuthentication } from "../services/authService";
 import { fetchRecipeById, fetchRecipes } from "../services/recipeService";
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
   const [recipes, setRecipes] = useState([]);
   const [recipeId, setRecipeId] = useState(null);
   const [recipe, setRecipe] = useState(null);
+  const user = useAuthentication();
 
   useEffect(() => {
     setRecipe(null);
