@@ -14,3 +14,7 @@ section button {
   color: white;
   padding: 0.5rem 2rem;
 }
+
+section button[disabled] {
+  background-color: lightgray;
+}

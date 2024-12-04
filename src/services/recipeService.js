@@ -14,3 +14,10 @@ export async function fetchRecipeById(id) {
     .then((response) => response.json())
     .then((data) => data.meals[0]);
 }
+
+export async function fetchNameAndUrl(id) {
+  const baseUrl = "https://www.themealdb.com/api/json/v1/1/lookup.php";
+  return fetch(`${baseUrl}?i=${encodeURIComponent(id)}`)
+    .then((response) => response.json())
+    .then((data) => [data.meals[0].strMeal, data.meals[0].strMealThumb]);
+}

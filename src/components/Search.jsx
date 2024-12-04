@@ -13,6 +13,7 @@ export default function Search({ action }) {
     <form onSubmit={submit}>
       <input
         type="text"
+        placeholder="Search by recipe category..."
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
